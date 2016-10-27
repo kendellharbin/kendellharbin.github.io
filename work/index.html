@@ -1,0 +1,49 @@
+---
+layout: default
+title: Work by Michael Dijkstra
+---
+<div class="page-wrapper">
+  <div class="nav nav-prev">
+    <p><a href="/">&larr; <span class="nav-title">Home</span></a></p>
+  </div>
+
+  <div class="header text-center">
+    <div class="header-img">
+      <img src="/assets/img/work.jpg" data-retina="/assets/img/work@2x.jpg" alt="Work" height="210" width="210">
+    </div>
+    <div class="header-title">
+      <h1>Product Design<br>&amp; Development</h1>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <p>Over the years I have worked with a number of different small teams, as a freelancer, co-founder or employee; in design, development and product management roles.</p>
+
+    <p>I am drawn to working on products which solve real problems and know that most of the time you have to say no to 1,000<sup class="footnoted"></sup> things in order to focus on solving something well.</p>
+
+    <p>While working I enjoy finding new ways of doing things and look to improve processes and build tools to improve my workflow.</p>
+
+    <p>I take every opportunity I can to work with like-minded people, so if you're working on something you think I might find interesting, <a href="http://twitter.com/micdijkstra/">let me know</a>.</p>
+  </div>
+
+  <hr>
+
+  <div class="content" id="built">
+    <h2 class="text-center">Selection of Work</h2>
+
+    <ul>
+    {% for post in site.posts sort_by:date limit:5 %}
+      <li><a href="{{ post.url }}">{{post.heading}}</a> &hellip; {{post.tagline}}.</li>
+    {% endfor %}
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="content">
+    <ol id="footnotes">
+      <li>"Focusing is about saying no" - Steve Jobs (WWDC'97). If you haven't, <a href="https://www.youtube.com/watch?v=H8eP99neOVs">watch the video</a>.</li>
+    </ol>
+  </div>
+</div>
