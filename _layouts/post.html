@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="nav nav-prev">
+  <p><a href="/">&larr; <span class="nav-title">Home</span></a></p>
+</div>
+
+<div class="post">
+  <div class="header text-center">
+    <div class="header-title">
+      <h1>{{page.heading}}</h1>
+    </div>
+  </div>
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  <hr>
+
+  <div id="footnotes">
+    <p class="text-center"><em>Posted in {{ page.date | date: "%B %Y" }}</em></p>
+  </div>
+
+  <div class="post-nav">
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}" class="post-nav-prev" title="Previous Post: {{page.previous.heading}}">&larr; {{page.previous.heading}}</a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a href="{{page.next.url}}" class="post-nav-next" title="next Post: {{page.next.heading}}">{{page.next.heading}} &rarr;</a>
+    {% endif %}
+  </div>
+</div>
