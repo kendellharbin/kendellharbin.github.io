@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: white;
+	background-color: #A8D9DC;
+}
+
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+	font-family: 'Roboto', sans-serif;
+}
+p{
+	font-size: 2em;
+	font-family: 'Vesper Libre', serif;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+
+/*************************** corner rounds ********************/
+/*.content {position:relative;
+	      width:600px;
+	      height:700px;}
+
+.content:before, .content:after, .content>:first-child:before, .content>:first-child:after {
+    position:absolute;
+    width:600px;
+    height: 700px;
+    border-color:white;
+    border-style:solid;
+    content: ' ';
+}
+.content:before {top:0;left:0;border-width: 1px 0 0 1px}
+.content:after {top:0;right:0;border-width: 1px 1px 0 0}
+.content>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0}
+.content>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px}*/
