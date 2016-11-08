@@ -14,20 +14,37 @@ body{
 	position: relative;
 }
 h1{
+	color: #000;
 	font-size: 6em;
+	font-family: 'Roboto', sans-serif;
+}
+h2{
+	color: #000;
+	font-size: 4em;
 	font-family: 'Roboto', sans-serif;
 }
 p{
 	font-size: 2em;
 	font-family: 'Vesper Libre', serif;
 }
+#section0 p{
+	line-height: 1em;
+	 width: 80%;
+	 margin: 0 auto;
+}
 .intro p{
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 	font-size: 1.5em;
+	line-height: 1em;
 }
 .section{
 	text-align:center;
+}
+.full_img {
+	width: 70%;
+	height: 70%;
+	border: 2px solid white;
 }
 
 /*************************** corner rounds ********************/
