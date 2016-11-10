@@ -3,8 +3,8 @@
  * --------------------------------------- */
 body{
 	font-family: arial,helvetica;
-	color: white;
-	background-color: #A8D9DC;
+	color: black;
+	background-color: white;
 }
 
 .wrap{
@@ -14,12 +14,12 @@ body{
 	position: relative;
 }
 h1{
-	color: #000;
+	color: black;
 	font-size: 6em;
 	font-family: 'Roboto', sans-serif;
 }
 h2{
-	color: #000;
+	color: black;
 	font-size: 4em;
 	font-family: 'Roboto', sans-serif;
 }
@@ -27,11 +27,7 @@ p{
 	font-size: 2em;
 	font-family: 'Vesper Libre', serif;
 }
-#section0 p{
-	line-height: 1em;
-	 width: 80%;
-	 margin: 0 auto;
-}
+
 .intro p{
 	width: 80%;
 	margin: 0 auto;
@@ -41,26 +37,12 @@ p{
 .section{
 	text-align:center;
 }
+
 .full_img {
-	width: 70%;
-	height: 70%;
-	border: 2px solid white;
+	height: 80%;
+	border: 2px solid black;
 }
 
-/*************************** corner rounds ********************/
-/*.content {position:relative;
-	      width:600px;
-	      height:700px;}
-
-.content:before, .content:after, .content>:first-child:before, .content>:first-child:after {
-    position:absolute;
-    width:600px;
-    height: 700px;
-    border-color:white;
-    border-style:solid;
-    content: ' ';
-}
-.content:before {top:0;left:0;border-width: 1px 0 0 1px}
-.content:after {top:0;right:0;border-width: 1px 1px 0 0}
-.content>:first-child:before {bottom:0;right:0;border-width: 0 1px 1px 0}
-.content>:first-child:after {bottom:0;left:0;border-width: 0 0 1px 1px}*/
+.item{
+    position: absolute;
+ }
