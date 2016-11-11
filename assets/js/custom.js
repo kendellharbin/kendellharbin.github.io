@@ -2,14 +2,14 @@
 
 $(document).ready(function(){
 
-    var items = ['hat1.png', 'pen.jpg', 'pen.jpg', 'pen.jpg'];
+    var items = ['hat1.png', 'pen.png', 'tape.png'];
 
 
     items.forEach(function(item, index){
         var section = index + 2;
-    	var item_loc = `./assets/imgs/${item}`;
+    	var item_loc = `./assets/imgs/home/${item}`;
         var item_id = `section${index}`;
-        var item_src = `<a href="#" class="item" data-src=${section}><img src=${item_loc} width="200" height="300"/></a>`;
+        var item_src = `<a href="#" class="item" data-src=${section}><img src=${item_loc} /></a>`;
     	$(item_src).appendTo("#section0 .content");
 
     });
