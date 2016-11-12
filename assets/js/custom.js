@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-    var items = ['pin.png', 'pen.png', 'tape.png','postit.png'];
+    var items = ['pin.png', 'pen.png', 'tape2.png','postit.png'];
 
 
     items.forEach(function(item, index){
