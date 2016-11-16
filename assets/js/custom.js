@@ -9,7 +9,7 @@ $(document).ready(function(){
     	var item_loc = `./assets/imgs/home/${item}`;
         var item_id = `section${index}`;
         var item_src = `<a href="#" class="item" data-src=${section}><img src=${item_loc} /></a>`;
-        $(item_src).appendTo("#fullpage:first-child");
+        $(item_src).appendTo(".section:first-of-type");
     });
 
 	var ww = $(window).width();
