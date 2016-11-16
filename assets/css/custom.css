@@ -2,16 +2,9 @@
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Vesper Libre', serif;
 	color: black;
 	background-color: white;
-}
-
-.wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100px;
-	position: relative;
 }
 h1{
 	color: black;
@@ -23,26 +16,9 @@ h2{
 	font-size: 4em;
 	font-family: 'Roboto', sans-serif;
 }
-p{
-	font-size: 2em;
-	font-family: 'Vesper Libre', serif;
-}
-
-.intro p{
-	width: 80%;
-	margin: 0 auto;
-	font-size: 1.5em;
-	line-height: 1em;
-}
 .section{
 	text-align:center;
 }
-
-.full_img {
-	height: 80%;
-	border: 2px solid black;
-}
-
 .item{
     position: absolute;
  }
