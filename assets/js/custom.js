@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-    var items = ['pin.png', 'pen.png', 'tape2.png','postit.png', 'whistle.png'];
+    var items = ['pin.png', 'pen.png', 'tape2.png','postit.png', 'whistle.png', 'ruler.png'];
 
     items.forEach(function(item, index){
         var section = index + 2;
