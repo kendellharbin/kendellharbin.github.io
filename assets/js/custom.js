@@ -2,16 +2,6 @@
 
 $(document).ready(function(){
 
-    var items = ['pin.png', 'pen.png', 'tape2.png','postit.png', 'whistle.png', 'ruler.png'];
-
-    items.forEach(function(item, index){
-        var section = index + 2;
-    	var item_loc = `./assets/imgs/home/${item}`;
-        var item_id = `section${index}`;
-        var item_src = `<a href="#" class="item" data-src=${section}><img src=${item_loc} /></a>`;
-        $(item_src).appendTo(".section:first-of-type");
-    });
-
 	var ww = $(window).width();
     var wh = $(window).height();
 
