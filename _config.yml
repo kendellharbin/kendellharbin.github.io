@@ -1,0 +1,12 @@
+source:      .
+destination: _deploy
+
+collections:
+- sections
+
+defaults:
+  - scope:
+      path: sections
+      type: section
+    values:
+      layout: section_layout

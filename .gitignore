@@ -1,3 +1,6 @@
 _site/
 *.DS_Store
 *.swp
+_deploy
+.bundle
+vendor
