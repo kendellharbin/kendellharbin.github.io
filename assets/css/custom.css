@@ -6,7 +6,6 @@ body {
 	margin: 0px;
     padding: 0px;
     font-size: 62.5%;
-   /* border: 5px solid black;*/
 }
 h1 {
 	font-size: 800%;
@@ -24,12 +23,19 @@ p {
 	text-indent: 0%;
     margin-bottom: 2%;
     line-height: 130%;}
+
 li {
 	font-size: 170%;
-    line-height: 100%;}
+    line-height: -100%;}
 
 .section {
 	text-align:center;
+}
+.section h1 {
+	font-size: 300%;
+	font-family: 'Quicksand', sans-serif;
+	color: black;
+	z-index: 100;
 }
 
 .item {
@@ -61,6 +67,7 @@ a {
   display: flex;
   width: 100%;
 }
+
 .left {
 	flex: 1;
 	margin-left: 70px;
@@ -73,37 +80,8 @@ a {
     padding-top: 2%;
 }
 
-.punk_yellow {
-	color: #DFDF01;
-}
-.punk_pink {
-	color: #FFBFFB;
-}
-.punk_orange {
-	color: #EAA400;
-}
-.punk_red {
-	color: #CC1839;
-}
-.punk_blue {
-	color: #C6EDE8;
-}
-.punk_old {
-	color: #E6CEB0;
-}
-.punk_purple {
-	color: #AC97FF;
-}
-.punk_green {
-	color: #6DBF4B;
-}
-.punk_light_blue {
-	color: #C2D8D5;
-}
-.punk_hot_pink {
-	color: #FE619B;
-}
 img {
     width: 100%;
     height: auto;
+    z-index: 1;
 }

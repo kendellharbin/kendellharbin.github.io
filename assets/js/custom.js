@@ -2,19 +2,40 @@
 
 $(document).ready(function(){
 
-	var ww = $(window).width();
-    var wh = $(window).height();
-
-    $(".item").each(function(i){
-	    var rotationNum = Math.round((Math.random()*360)+1);
-	    var rotation = "rotate("+rotationNum+"deg)";
-	    var posx = Math.round(Math.random() * ww)-80;
-	    var posy = Math.round(Math.random() * wh)-80;
-	    $(this).css("top", posy + "px").css("left", posx + "px").css("transform",rotation).css("-ms-transform",rotation).css("-webkit-transform",rotation);
+	var containerW = $(window).width();
+    var containerH = $(window).height();
+    var positions = [];
+    $(".item").each(function() {
+        var coords = {
+            w: $(this).outerWidth(true),
+            h: $(this).outerHeight(true)
+        };
+        var success = false;
+        while (!success)
+        {
+            coords.x = parseInt(Math.random() * (containerW-coords.w));
+            coords.y = parseInt(Math.random() * (containerH-coords.h));
+            var success = true;
+            $.each(positions, function(){
+                if (
+                    coords.x <= (this.x + this.w) &&
+                    (coords.x + coords.w) >= this.x &&
+                    coords.y <= (this.y + this.h) &&
+                    (coords.y + coords.h) >= this.y
+                )
+                {
+                    success = false;
+                }
+            });
+        }
+        positions.push(coords);
+        $(this).css({
+            top: coords.y + 'px',
+            left: coords.x + 'px'
+        });
     });
 
     $('a.item').click(function(){
       $.fn.fullpage.moveTo($(this).attr('data-src'), 0);
     });
 });
-
