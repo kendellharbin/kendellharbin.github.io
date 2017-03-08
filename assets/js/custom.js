@@ -15,7 +15,7 @@ $(document).ready(function(){
         {
             coords.x = parseInt(Math.random() * (containerW-coords.w));
             coords.y = parseInt(Math.random() * (containerH-coords.h));
-            var success = true;
+            success = true;
             $.each(positions, function(){
                 if (
                     coords.x <= (this.x + this.w) &&
@@ -24,6 +24,7 @@ $(document).ready(function(){
                     (coords.y + coords.h) >= this.y
                 )
                 {
+                    console.log('bad fit!');
                     success = false;
                 }
             });
