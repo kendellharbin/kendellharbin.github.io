@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-    var maxSearchIterations = 100;
+    var maxSearchIterations = 10000;
     var min_x = 50;
     var max_x = $(window).width() - 50;
     var min_y = 50;
