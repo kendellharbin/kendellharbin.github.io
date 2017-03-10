@@ -3,9 +3,9 @@
 $(document).ready(function(){
 
     var maxSearchIterations = 10000;
-    var min_x = 50;
+    var min_x = 0;
     var max_x = $(window).width() - 50;
-    var min_y = 50;
+    var min_y = 0;
     var max_y = $(window).height() - 50;
     var filled_areas = [];
 
