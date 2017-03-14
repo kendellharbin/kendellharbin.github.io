@@ -2,11 +2,11 @@ source:      .
 destination: _deploy
 
 collections:
-- sections
+  - sections
 
-defaults:
-  - scope:
-      path: sections
-      type: section
-    values:
-      layout: section_layout
+# defaults:
+#   - scope:
+#       path: sections
+#       type: section
+#     values:
+#       layout: section_layout

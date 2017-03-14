@@ -29,6 +29,9 @@ $(document).ready(function(){
                 continue;
             }
 
+
+
+
             // intersection exists : calculate it !
             var x1 = Math.max(a1.x, a2.x);
             var y1 = Math.max(a1.y, a2.y);

@@ -68,10 +68,10 @@ a {
   width: 100%;
 }
 
-.left {
-	flex: 1;
-	margin-left: 70px;
-	padding-top: 4%;
+.object {
+    position: absolute;
+	left: 20px;
+	top: 20px;
 }
 .right {
 	flex: 3;
@@ -84,4 +84,19 @@ div.section h1 {
   top: 2%;
   left: 2%;
   position: absolute;
+}
+
+.fp-controlArrow.fp-prev {
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:25px;
+    height:25px;
+    transform: rotate(135deg);
+}
+.fp-controlArrow.fp-next{
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+    width:25px;
+    height:25px;
+    transform: rotate(-45deg);
 }

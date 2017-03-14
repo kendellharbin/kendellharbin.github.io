@@ -1,14 +1,24 @@
 ---
 layout: default
 ---
+{% assign sections = site.sections | sort: 'value' %}
 
-{% include sections/home.html %}
+ <div class="section">
+   <h1>Kendell Harbin</h1>
+   {% for section in sections %}
+     <a href="#" class="item" data-src={{ section.value }}><img src={{ section.image }} ></a>
+   {% endfor %}
+ </div>
 
-{% include sections/badge.html %}
-{% include sections/yesbutton.html %}
-{% include sections/wrench.html %}
-{% include sections/rubon.html %}
-{% include sections/externalmemory.html %}
-{% include sections/clamp.html %}
-
-{% include sections/footer.html %}
+{% for section in sections %}
+<div class="section">
+  <div class="slide">
+    <div class="left">
+      <img src={{ section.image }} alt={{ section.value }} class="section-image">
+    </div>
+    <div class="right">
+      <p>{{  section.content  }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
