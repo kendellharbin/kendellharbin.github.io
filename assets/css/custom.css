@@ -53,19 +53,7 @@ li {
     position: absolute;
  }
 
-.footer {
-    padding: 48px 0;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-   /* background-color: black;*/
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 80%;
-}
+
 
 a {
     color: inherit;
@@ -217,4 +205,25 @@ div.section h1 {
   #8F7CC1 220px,
   #8F7CC1 221px
 );
+}
+.white {
+  /*background-color: #6D47D0;*/
+  background: repeating-linear-gradient(
+  to right,
+  #FFFFFF,
+  #FFFFFF 220px,
+  #C8C7A4 220px,
+  #C8C7A4 221px
+);
+}
+
+.footer {
+  height:25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #FC3044;
+  text-align: bottom;
 }

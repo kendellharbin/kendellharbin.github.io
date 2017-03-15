@@ -3,6 +3,7 @@ layout: default
 ---
 {% assign sections = site.sections | sort: 'value' %}
 
+ <!-- home section -->
  <div class="section">
    <h1 class="dark-blue">everything tells a story</h1>
    {% for section in sections %}
@@ -10,44 +11,51 @@ layout: default
    {% endfor %}
  </div>
 
+<!-- all sections -->
 {% for section in sections %}
   {% if section.image-orientation == 'left' %}
   <div class="section purple">
   {% else %}
   <div class="section yellow">
    {% endif %}
+
+  <!-- slide -->
   <div class="slide">
 
-    <div class="container section-header">
-      <a href="/"><img class="image_scaler_section" src={{ section.image }} alt={{ section.value }}></a>
-      {% if section.image-orientation == 'left' %}
-        <i class="material-icons light-blue">menu</i>
-      {% else %}
-        <i class="material-icons red">menu</i>
-      {% endif %}
-    </div>
-
-    <div class="section-body-container">
-
-    {% if section.image-orientation == 'left' %}
-      <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
-      <!-- {{ section.first_image }} -->
-      <div class="section-text-container">
-        <h4 class="section-text-header light-blue">{{ section.title }}</h4>
-        <div class="section-body-text">{{  section.content  }}</div>
-      </div>
-    {% else %}
-      <!-- {{ section.first_image }} -->
-      <div class="section-text-container">
-        <h4 class="section-text-header red">{{ section.title }}</h4>
-        <div class="section-body-text">{{  section.content  }}</div>
-      </div>
-      <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
-    {% endif %}
+        <!-- header -->
+        <div class="container section-header">
+          <a href="/"><img class="image_scaler_section" src={{ section.image }} alt={{ section.value }}></a>
+          {% if section.image-orientation == 'left' %}
+            <i class="material-icons light-blue">menu</i>
+          {% else %}
+            <i class="material-icons red">menu</i>
+          {% endif %}
+        </div>
 
 
-    </div>
-
+        <!-- body -->
+        <div class="section-body-container">
+        {% if section.image-orientation == 'left' %}
+          <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
+          <!-- {{ section.first_image }} -->
+          <div class="section-text-container">
+            <h4 class="section-text-header light-blue">{{ section.title }}</h4>
+            <div class="section-body-text">{{  section.content  }}</div>
+          </div>
+        {% else %}
+          <!-- {{ section.first_image }} -->
+          <div class="section-text-container">
+            <h4 class="section-text-header red">{{ section.title }}</h4>
+            <div class="section-body-text">{{  section.content  }}</div>
+          </div>
+          <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
+        {% endif %}
+        </div>
   </div>
 </div>
 {% endfor %}
+
+<!-- footer -->
+<div class="section white">
+  <div class="footer"></div>
+</div>
