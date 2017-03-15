@@ -57,5 +57,14 @@ layout: default
 
 <!-- footer -->
 <div class="section white">
-  <div class="footer"></div>
+  <div class="footer">
+          <div class="container footer-header">
+          <a href="/"><img class="image_scaler_section" src="./assets/imgs/home_risoink.png" alt="footer image"></a>
+          {% if section.image-orientation == 'left' %}
+            <i class="material-icons light-blue">menu</i>
+          {% else %}
+            <i class="material-icons red">menu</i>
+          {% endif %}
+        </div>
+  </div>
 </div>
