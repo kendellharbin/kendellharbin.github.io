@@ -17,6 +17,16 @@ h2 {
 	font-family: 'Quicksand', sans-serif;
 	color: #1400FF;
 }
+h3 {
+  font-size: 600%;
+  font-family: 'Quicksand', sans-serif;
+  color: #1400FF;
+}
+h4 {
+  font-size: 500%;
+  font-family: 'Quicksand', sans-serif;
+  color: #1400FF;
+}
 p {
 	font-size: 200%;
 	text-align: left;
@@ -27,6 +37,7 @@ p {
 li {
 	font-size: 170%;
     line-height: -100%;}
+
 
 .section {
 	text-align:center;
@@ -42,11 +53,11 @@ li {
     position: absolute;
  }
 
-#footer {
+.footer {
     padding: 48px 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
-    background-color: black;
+   /* background-color: black;*/
     position: absolute;
     right: 0;
     bottom: 0;
@@ -73,12 +84,6 @@ a {
 	left: 20px;
 	top: 20px;
 }
-.right {
-	flex: 3;
-	margin-right: 150px;
-	padding-left: 10px;
-    padding-top: 2%;
-}
 
 div.section h1 {
   top: 85%;
@@ -99,4 +104,85 @@ div.section h1 {
     width:25px;
     height:25px;
     transform: rotate(-45deg);
+}
+
+.image_scaler_home {
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.image_scaler_section {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.upper_left {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.top_bar {
+    top: 20px;
+}
+
+
+/*.vertically_centered {
+  display: inline-block;
+  vertical-align: middle;
+}*/
+
+.section_text_position {
+    float: right;
+}
+/*.first-image {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+}*/
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.section-header {
+  position:relative;
+  top: -80px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-body-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-body-text{
+  width: 600px;
+  /*padding: 10px 15px;*/
+  text-align: left;
+  font-size: 16px;
+}
+.section-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.underline {
+  text-align: left;
+  text-decoration: underline;
+  padding-bottom: 60px;
 }
