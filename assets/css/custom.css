@@ -25,7 +25,6 @@ h3 {
 h4 {
   font-size: 500%;
   font-family: 'Quicksand', sans-serif;
-  color: #1400FF;
 }
 p {
 	font-size: 200%;
@@ -39,8 +38,11 @@ li {
     line-height: -100%;}
 
 
-.section {
-	text-align:center;
+.yellow {
+  background-color: #F8F586;
+}
+.purple {
+  background-color: #6D47D0;
 }
 .section h1 {
 	font-size: 300%;
@@ -181,8 +183,37 @@ div.section h1 {
   padding-left: 50px;
 }
 
-.underline {
+.red {
+  color: #FF263B;
+}
+
+.light-blue {
+  color: #A9F3FB;
+}
+
+.section-text-header {
   text-align: left;
   text-decoration: underline;
   padding-bottom: 60px;
+}
+
+.yellow {
+  /*background-color: #F8F586;*/
+  background: repeating-linear-gradient(
+  to right,
+  #F8F586,
+  #F8F586 220px,
+  #C8C7A4 220px,
+  #C8C7A4 221px
+);
+}
+.purple {
+  /*background-color: #6D47D0;*/
+  background: repeating-linear-gradient(
+  to right,
+  #6D47D0,
+  #6D47D0 220px,
+  #8F7CC1 220px,
+  #8F7CC1 221px
+);
 }
