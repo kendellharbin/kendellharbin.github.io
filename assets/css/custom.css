@@ -158,7 +158,6 @@ div.section h1 {
 }
 .section-body-text{
   width: 600px;
-  /*padding: 10px 15px;*/
   text-align: left;
   font-size: 16px;
 }
@@ -231,4 +230,12 @@ div.section h1 {
 .footer-header {
   position:relative;
   top: -700px;
+}
+
+.footer-body {
+  position:relative;
+  top: -600px;
+  padding-right: 100px;
+  padding-left: 100px;
+
 }
