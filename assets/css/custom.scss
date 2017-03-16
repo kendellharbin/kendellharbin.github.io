@@ -95,6 +95,16 @@ span.home-text-position  {
 }
 {% endfor %}
 
+{% for color in site.colors %}
+.{{color.name}}-stripe-background {
+  background: repeating-linear-gradient(
+  to right,
+  {{ color.hex }},
+  {{ color.hex }} 220px,
+  #C8C7A4 220px,
+  #C8C7A4 221px);
+}
+{% endfor %}
 
 /* ----------------- Use these to size images -------------------------------- */
 .image_scaler_home {
