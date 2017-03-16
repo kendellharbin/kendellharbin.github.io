@@ -60,37 +60,7 @@ html.fp-enabled,
     float: left;
     position: relative;
 }
-.fp-controlArrow {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    margin-top: -38px;
 
-}
-
-.fp-controlArrow.fp-prev {
-    background: url(/assets/imgs/arrow-right.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 15px;
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Safari */
-    transform: rotate(180deg);
-}
-
-.fp-controlArrow.fp-next {
-    background: url(/assets/imgs/arrow-right.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    right: 15px;
-}
 .fp-scrollable {
     overflow: hidden;
     position: relative;
