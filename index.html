@@ -7,51 +7,62 @@ layout: default
  <div class="section">
    <span class="dark-blue">everything tells a story</span>
    {% for section in sections %}
-     <a href="#" class="item" data-src={{ section.value }}><img class="image_scaler_home" src={{ section.image }} ></a>
+     <a href="#" class="item" data-src={{ section.value }}><img class="image_scaler_home" src={{ section.home-image }} ></a>
    {% endfor %}
  </div>
 
 <!-- all sections -->
 {% for section in sections %}
-  {% if section.image-orientation == 'left' %}
-  <div class="section purple-stripe-background">
+  {% if section.background == 'yellow' %}
+    <div class="section yellow-stripe-background">
   {% else %}
-  <div class="section yellow-stripe-background">
-   {% endif %}
+    <div class="section purple-stripe-background">
+  {% endif %}
 
   <!-- slide -->
+  {% for slide in section.slides %}
   <div class="slide">
 
         <!-- header -->
         <div class="container section-header">
-          <a href="/"><img class="image_scaler_section" src={{ section.image }} alt={{ section.value }}></a>
-          {% if section.image-orientation == 'left' %}
-            <i class="material-icons light-blue">menu</i>
-          {% else %}
+          <a href="/"><img class="image_scaler_section" src={{ slide.header-image }}></a>
+          {% if section.background == 'yellow' %}
             <i class="material-icons red">menu</i>
+          {% else %}
+            <i class="material-icons light-blue">menu</i>
           {% endif %}
         </div>
 
 
         <!-- body -->
         <div class="section-body-container">
-        {% if section.image-orientation == 'left' %}
+        {% if slide.image-orientation == 'left' %}
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
-          <!-- {{ section.first_image }} -->
+          <!-- {{ slide.image }} -->
           <div class="section-text-container">
-            <span class="section-text-header light-blue">{{ section.title }}</span>
-            <div class="section-body-text">{{  section.content  }}</div>
+            {% if section.background == 'yellow' %}
+              <span class="section-text-header red">{{ slide.title }}</span>
+            {% else %}
+              <span class="section-text-header light-blue">{{ slide.title }}</span>
+            {% endif %}
+            <div class="section-body-text">{{  slide.content  }}</div>
           </div>
         {% else %}
-          <!-- {{ section.first_image }} -->
+          <!-- {{ slide.image }} -->
           <div class="section-text-container">
-            <span class="section-text-header red">{{ section.title }}</span>
-            <div class="section-body-text">{{  section.content  }}</div>
+            {% if section.background == 'yellow' %}
+              <span class="section-text-header red">{{ slide.title }}</span>
+            {% else %}
+              <span class="section-text-header light-blue">{{ slide.title }}</span>
+            {% endif %}
+            <div class="section-body-text">{{  slide.content  }}</div>
           </div>
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
         {% endif %}
         </div>
   </div>
+  {% endfor %}
+
 </div>
 {% endfor %}
 
