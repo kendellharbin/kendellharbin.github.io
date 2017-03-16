@@ -26,7 +26,7 @@ layout: default
         <!-- header -->
         <div class="container section-header">
           <a href="/"><img class="image_scaler_section" src={{ slide.header-image }}></a>
-          {% if section.background == 'yellow' %}
+          {% if slide.background == 'yellow' %}
             <i class="material-icons red">menu</i>
           {% else %}
             <i class="material-icons light-blue">menu</i>
@@ -40,7 +40,7 @@ layout: default
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
           <!-- {{ slide.image }} -->
           <div class="section-text-container">
-            {% if section.background == 'yellow' %}
+            {% if slide.background == 'yellow' %}
               <span class="section-text-header red">{{ slide.title }}</span>
             {% else %}
               <span class="section-text-header light-blue">{{ slide.title }}</span>
@@ -50,7 +50,7 @@ layout: default
         {% else %}
           <!-- {{ slide.image }} -->
           <div class="section-text-container">
-            {% if section.background == 'yellow' %}
+            {% if slide.background == 'yellow' %}
               <span class="section-text-header red">{{ slide.title }}</span>
             {% else %}
               <span class="section-text-header light-blue">{{ slide.title }}</span>
