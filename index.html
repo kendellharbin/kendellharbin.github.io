@@ -5,7 +5,7 @@ layout: default
 
  <!-- home section -->
  <div class="section">
-   <h1 class="dark-blue">everything tells a story</h1>
+   <span class="dark-blue">everything tells a story</span>
    {% for section in sections %}
      <a href="#" class="item" data-src={{ section.value }}><img class="image_scaler_home" src={{ section.image }} ></a>
    {% endfor %}
@@ -14,9 +14,9 @@ layout: default
 <!-- all sections -->
 {% for section in sections %}
   {% if section.image-orientation == 'left' %}
-  <div class="section purple">
+  <div class="section purple-stripe-background">
   {% else %}
-  <div class="section yellow">
+  <div class="section yellow-stripe-background">
    {% endif %}
 
   <!-- slide -->
@@ -39,13 +39,13 @@ layout: default
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
           <!-- {{ section.first_image }} -->
           <div class="section-text-container">
-            <h4 class="section-text-header light-blue">{{ section.title }}</h4>
+            <span class="section-text-header light-blue">{{ section.title }}</span>
             <div class="section-body-text">{{  section.content  }}</div>
           </div>
         {% else %}
           <!-- {{ section.first_image }} -->
           <div class="section-text-container">
-            <h4 class="section-text-header red">{{ section.title }}</h4>
+            <span class="section-text-header red">{{ section.title }}</span>
             <div class="section-body-text">{{  section.content  }}</div>
           </div>
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
@@ -56,7 +56,7 @@ layout: default
 {% endfor %}
 
 <!-- footer -->
-<div class="section white">
+<div class="section white-stripe-background">
   <div class="footer">
       <div class="container footer-header">
           <a href="/"><img class="image_scaler_section" src="./assets/imgs/home_risoink.png" alt="footer image"></a>
