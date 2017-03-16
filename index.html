@@ -13,15 +13,15 @@ layout: default
 
 <!-- all sections -->
 {% for section in sections %}
-  {% if section.background == 'yellow' %}
-    <div class="section yellow-stripe-background">
-  {% else %}
-    <div class="section purple-stripe-background">
-  {% endif %}
+<div class="section">
 
   <!-- slide -->
   {% for slide in section.slides %}
-  <div class="slide">
+    {% if slide.background == 'yellow' %}
+      <div class="slide yellow-stripe-background">
+    {% else %}
+      <div class="slide purple-stripe-background">
+    {% endif %}
 
         <!-- header -->
         <div class="container section-header">
