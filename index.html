@@ -26,17 +26,18 @@ layout: default
         <!-- body -->
         <div class="section-body-container">
         {% if slide.image-orientation == 'left' %}
+        <!-- {{ slide.image }} -->
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
           <div class="section-text-container">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
         {% else %}
-          <!-- {{ slide.image }} -->
           <div class="section-text-container">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
+          <!-- {{ slide.image }} -->
           <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=700x500&w=700&h=500">
         {% endif %}
         </div>
@@ -56,8 +57,6 @@ layout: default
       <div class="footer-body center">
         <p class="red bold">My name is Kendell Harbin.</p>
         <p class="red bold">I live and work in Kansas City, Missouri.</p>
-
-
           <p>When asked ‘what do you do?’</p>
           <p>I respond with any of the following:</p>
           <p>I collaborate with Madeline Gallucci as co-director of Front/Space.</p>

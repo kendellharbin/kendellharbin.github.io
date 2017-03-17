@@ -120,6 +120,9 @@ span.home-text-position  {
     max-height: 100px;
 }
 
+/* --------------- Header Styles ------------------------------------ */
+
+
 /* ---------------------------- section styles --------------------------------- */
 
 .flex {
@@ -132,10 +135,13 @@ span.home-text-position  {
   top: -80px;
 }
 
-.container {
+div.slide .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-right: 30px;
+  margin-left: 30px;
+  top: -30px;
 }
 
 .section-body-container {
@@ -184,27 +190,26 @@ span.home-text-position  {
     -ms-user-select: none;
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 92%;
     cursor: pointer;
-    width: 100px;
+    width: 150px;
     height: 100px;
     margin-top: -38px;
-
 }
 
 .fp-controlArrow.fp-prev {
-    background: url(/assets/imgs/arrow-right.jpeg);
+    background: url(/assets/imgs/arrow-right.png);
     background-repeat: no-repeat;
     background-size: cover;
-    left: 15px;
+    left: 25px;
     -ms-transform: rotate(180deg); /* IE 9 */
     -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);
 }
 
 .fp-controlArrow.fp-next {
-    background: url(/assets/imgs/arrow-right.jpeg);
+    background: url(/assets/imgs/arrow-right.png);
     background-repeat: no-repeat;
     background-size: cover;
-    right: 15px;
+    right: 25px;
 }
