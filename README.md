@@ -12,7 +12,7 @@ Steps to add a new Section
 4. each section file will have these properties:
 ```yaml
    home-image: ./assets/imgs/home_bells.png (from step 1)
-   value: 2 (this is the order of how the sections display)
+   value: 2 (this is the order of how the sections display, annoying, but you will just have to keep a count of the sections for now)
 ```
 
 5. add any colors you want to reference [here](https://github.com/kendellharbin/kendellharbin.github.io/blob/master/_config.yml), once added you can reference colors by name or by <color-name>-stripe-background.
