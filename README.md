@@ -1,7 +1,7 @@
 # kendellharbin.github.io
 personal portfolio site for Kendell Harbin
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/assets/imgs/readme.png)
 Format: ![Alt Text](url)
 
 
