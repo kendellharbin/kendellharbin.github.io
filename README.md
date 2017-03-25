@@ -3,7 +3,12 @@ personal portfolio site for Kendell Harbin
 
 
 Steps to add a new Section
-- add header-image [here](https://github.com/kendellharbin/kendellharbin.github.io/tree/master/assets/imgs)
+- add header-image [here](https://github.com/kendellharbin/kendellharbin.github.io/tree/master/assets/imgs) with naming convention home_<something>.png
+- create new section file [here](https://github.com/kendellharbin/kendellharbin.github.io/tree/master/_sections) referencing the same name as above minus home.
+- copy the format from another section in the same directory.
+- each section file will have these properties:
+  home-image: ./assets/imgs/home_bells.png (from step 1)
+  value: 2 (this is the order of how the sections display)
 
 slides:
   - header-image: ./assets/imgs/home_peel.png
