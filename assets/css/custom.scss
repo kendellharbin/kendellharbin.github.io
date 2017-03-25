@@ -57,32 +57,6 @@ span.home-text-position  {
 
 /*------------------------ colors and backgrounds ----------------------------- */
 
-
-.yellow-stripe-background {
-  background: repeating-linear-gradient(
-  to right,
-  #F8F586,
-  #F8F586 220px,
-  #C8C7A4 220px,
-  #C8C7A4 221px); /*stipe color is #C8C7A4, background color is F8F586*/
-}
-.purple-stripe-background {
-  background: repeating-linear-gradient(
-  to right,
-  #6D47D0,
-  #6D47D0 220px,
-  #8F7CC1 220px,
-  #8F7CC1 221px);  /*stipe color is #8F7CC1, background color is 6D47D0*/
-}
-.white-stripe-background {
-  background: repeating-linear-gradient(
-  to right,
-  #FFFFFF,
-  #FFFFFF 220px,
-  #C8C7A4 220px,
-  #C8C7A4 221px);
-}
-
 {% for color in site.colors %}
 .{{ color.name }} {
   color: {{ color.hex }};
@@ -107,12 +81,7 @@ span.home-text-position  {
 {% endfor %}
 
 /* ----------------- Use these to size images -------------------------------- */
-.image_scaler_home {
-    height: auto;
-    width: auto;
-    max-width: 200px;
-    max-height: 200px;
-}
+
 .image_scaler_section {
     height: auto;
     width: auto;
