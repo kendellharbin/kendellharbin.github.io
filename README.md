@@ -9,7 +9,7 @@ Steps to add a new Section
 4. each section file will have these properties:
    home-image: ./assets/imgs/home_bells.png (from step 1)
    value: 2 (this is the order of how the sections display)
-5. next add a slided block to your section. this represents every slide within a section.
+5. next add a slide block to your section. this block represents every slide within a section.
    ```yaml
    slides:
     - header-image: ./assets/imgs/home_peel.png (this shows up in the upper left corner of the page)
