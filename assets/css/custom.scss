@@ -100,9 +100,9 @@ span.home-text-position  {
   background: repeating-linear-gradient(
   to right,
   {{ color.hex }},
-  {{ color.hex }} 220px,
-  #b3b3b3 220px,
-  #b3b3b3 221px);
+  {{ color.hex }} 230px,
+  #b3b3b3 230px,
+  #b3b3b3 230px);
 }
 {% endfor %}
 
