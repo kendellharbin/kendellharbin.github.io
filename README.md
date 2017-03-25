@@ -10,6 +10,7 @@ Steps to add a new Section
    home-image: ./assets/imgs/home_bells.png (from step 1)
    value: 2 (this is the order of how the sections display)
 5. next add a slided block to your section. this represents every slide within a section.
+   ```yaml
    slides:
     - header-image: ./assets/imgs/home_peel.png (this shows up in the upper left corner of the page)
       background: light-blue-stripe-background ( add a color [here](https://github.com/kendellharbin/kendellharbin.github.io/blob/master/_config.yml), strip gets created automatically)
@@ -20,4 +21,5 @@ Steps to add a new Section
       title: peel - slide 1
       content:
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```
 
