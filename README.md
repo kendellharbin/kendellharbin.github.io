@@ -28,8 +28,8 @@ Steps to add a new Section
       image: ./assets/imgs/test_image_1.jpg
       title: peel - slide 1
       content:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-```
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+   ```
 * header-image: this is the image that shows up in the upper-left corner, could be the same image from step 1 or something different.
 * background: put either a color name created in step 5 or a stripe background color.
 * icon-color: this is the color of the pancake icon in the upper right corner
