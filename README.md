@@ -1,9 +1,9 @@
 # kendellharbin.github.io
 personal portfolio site for Kendell Harbin
 
-![GitHub Logo](/assets/imgs/readme.png)
-Format: ![Alt Text](url)
 
+Steps to add a new Section
+- add header-image [here](https://github.com/kendellharbin/kendellharbin.github.io/tree/master/assets/imgs)
 
 slides:
   - header-image: ./assets/imgs/home_peel.png
