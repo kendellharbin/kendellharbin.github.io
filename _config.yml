@@ -12,6 +12,6 @@ colors:
   - name: dark-blue
     hex: '#0F2BEA'
   - name: yellow
-    hex: '#F8F586'
+    hex: '#f8f586'
   - name: purple
     hex: '#6D47D0'
