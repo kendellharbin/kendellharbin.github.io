@@ -32,17 +32,16 @@ p {
 .section-body-text {
   text-align: left;
   font-size: 1vw;
+  padding-top: 4vw;
 }
 
 .section-text-header {
   text-align: left;
-  text-decoration: underline;
-  padding-bottom: 60px;
+  border-bottom: .2vw solid;
+  font-size: 3vw;
 }
 
-span.section-text-header {
-  font-size: 500%;
-}
+
 
 span.home-text  {
   font-size: 2vw;
