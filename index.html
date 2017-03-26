@@ -20,13 +20,13 @@ layout: default
         <!-- header -->
         <div class="container section-header">
             <a href="/"><img class="image_scaler_section" src={{ slide.header-image }}></a>
-            <span>"Take me back to square one"</span>
+            <span style="width:5vw;" class={{ slide.icon-color }}>take me back<br>to square one</span>
+            <span class="filler"></span>
             <i class="material-icons {{ slide.icon-color }}">menu</i>
         </div>
         <!-- body -->
         <div class="section-body-container">
         {% if slide.image-orientation == 'left' %}
-        <!-- {{ slide.image }} -->
           <img class="first-image" src={{ slide.image }}>
 
           <div class="section-text-container left">
@@ -38,7 +38,6 @@ layout: default
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
-          <!-- {{ slide.image }} -->
           <img class="first-image" src={{ slide.image }}>
         {% endif %}
         </div>

@@ -93,6 +93,7 @@ span.home-text  {
     width: auto;
     max-width: 5vw;
     max-height: 5vw;
+    padding-right: 2vw;
 }
 
 /* ---------------------------- section styles --------------------------------- */
@@ -138,8 +139,12 @@ div.slide .container {
   top: 50%;
 }
 
-div.section-header span {
+span.filler {
   flex-basis: 90%;
+}
+
+span.return {
+  width: 5%;
 }
 
 /* -------------------------- footer styles ------------------------ */
