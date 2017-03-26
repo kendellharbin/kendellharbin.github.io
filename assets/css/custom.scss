@@ -30,7 +30,6 @@ p {
 }
 
 .section-body-text {
-  width: 600px;
   text-align: left;
   font-size: 16px;
 }
@@ -82,6 +81,12 @@ span.home-text-position  {
 
 /* ----------------- Use these to size images -------------------------------- */
 
+.image_scaler_home {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
+ }
 .image_scaler_section {
     height: auto;
     width: auto;
@@ -115,16 +120,26 @@ div.slide .container {
 
 .section-body-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .section-text-container {
-  display: flex;
+  width: 40%;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 50px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
+
+.first-image {
+  width: 60%;
+  }
+
+  .vert-centered {
+  top: 50%;
+}
+
 
 /* -------------------------- footer styles ------------------------ */
 .footer {
