@@ -87,8 +87,6 @@ $(document).ready(function(){
                 left: rand_x,
                 top: rand_y
             });
-
-            // console.log("and the winner is : " + smallest_overlap);
         });
         return false;
     }
@@ -97,5 +95,15 @@ $(document).ready(function(){
 
     $('a.item').click(function(){
       $.fn.fullpage.moveTo($(this).attr('data-src'), 0);
+    });
+
+    $( document ).ready(function() {
+      var hamburger = $('#hamburger-icon');
+      var nav = $('nav');
+      hamburger.click(function() {
+        nav.toggle();
+        hamburger.toggleClass('active');
+        return false;
+      });
     });
 });

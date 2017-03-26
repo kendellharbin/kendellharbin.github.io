@@ -44,9 +44,10 @@ span.section-text-header {
   font-size: 500%;
 }
 
-span.home-text-position  {
-  font-size: 300%;
-  font-family: 'Quicksand', sans-serif;
+span.home-text  {
+  font-size: 2vw;
+  font-weight: 600;
+  font-family: 'Eczar';
   z-index: 100000000;
   top: 85%;
   left: 75%;
@@ -85,18 +86,15 @@ span.home-text-position  {
 .image_scaler_home {
   height: auto;
   width: auto;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 10vw;
+  max-height: 10vw;
  }
 .image_scaler_section {
     height: auto;
     width: auto;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 5vw;
+    max-height: 5vw;
 }
-
-/* --------------- Header Styles ------------------------------------ */
-
 
 /* ---------------------------- section styles --------------------------------- */
 
@@ -192,3 +190,32 @@ div.slide .container {
     background-repeat: no-repeat;
     right: 25px;
 }
+
+
+
+
+
+
+#hamburger-icon {
+  position: fixed;
+  top: 28px;
+  left: 25px;
+  height: 27px;
+  width: 50px;
+  cursor: pointer;
+  display: block;
+  transition: all 1s cubic-bezier(.19, 1, .22, 1)
+
+}
+
+#hamburger-icon .line {
+
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 22px;
+  height: 2px;
+  left: 0;
+  transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+  -webkit-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+  -moz-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
