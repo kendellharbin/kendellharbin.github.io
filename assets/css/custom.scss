@@ -31,7 +31,7 @@ p {
 
 .section-body-text {
   text-align: left;
-  font-size: 16px;
+  font-size: 1vw;
 }
 
 .section-text-header {
@@ -76,7 +76,7 @@ span.home-text  {
   #B3B3B3,
   #B3B3B3 .1%,
   {{ color.hex }} .1%,
-  {{ color.hex }} 20% );
+  {{ color.hex }} 16.66% );
 }
 {% endfor %}
 
@@ -124,7 +124,7 @@ div.slide .container {
 }
 
 .section-text-container {
-  width: 40%;
+  width: 50%;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 2%;
@@ -132,7 +132,7 @@ div.slide .container {
 }
 
 .first-image {
-  width: 60%;
+  width: 50%;
   }
 
   .vert-centered {
@@ -219,4 +219,14 @@ div.slide .container {
   transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
   -webkit-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
   -moz-transition: all 0.6s cubic-bezier(.5, .1, 0, 1.2);
+  }
+
+  .right {
+    padding-left: 16.66%;
+    padding-right: 8.33%;
+  }
+
+  .left {
+    padding-left: 8.33%;
+    padding-right: 8.33%;
   }

@@ -34,17 +34,17 @@ layout: default
         <!-- {{ slide.image }} -->
           <img class="first-image" src={{ slide.image }}>
 
-          <div class="section-text-container">
+          <div class="section-text-container left">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
         {% else %}
-          <div class="section-text-container">
+          <div class="section-text-container right">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
           <!-- {{ slide.image }} -->
-          <img class="first-image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=1000x700&w=1000&h=700">
+          <img class="first-image" src={{ slide.image }}>
         {% endif %}
         </div>
   </div>
