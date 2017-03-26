@@ -109,7 +109,7 @@ span.home-text  {
 
 div.slide .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   margin-right: 30px;
   margin-left: 30px;
@@ -136,6 +136,10 @@ div.slide .container {
 
   .vert-centered {
   top: 50%;
+}
+
+div.section-header span {
+  flex-basis: 90%;
 }
 
 /* -------------------------- footer styles ------------------------ */
