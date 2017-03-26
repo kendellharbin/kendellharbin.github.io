@@ -72,12 +72,13 @@ span.home-text-position  {
 .{{color.name}}-stripe-background {
   background: repeating-linear-gradient(
   to right,
-  {{ color.hex }},
-  {{ color.hex }} 230px,
-  #b3b3b3 230px,
-  #b3b3b3 230px);
+  #B3B3B3,
+  #B3B3B3 .1%,
+  {{ color.hex }} .1%,
+  {{ color.hex }} 20% );
 }
 {% endfor %}
+
 
 /* ----------------- Use these to size images -------------------------------- */
 
@@ -140,7 +141,6 @@ div.slide .container {
   top: 50%;
 }
 
-
 /* -------------------------- footer styles ------------------------ */
 .footer {
   height:25px;
@@ -182,18 +182,13 @@ div.slide .container {
 }
 
 .fp-controlArrow.fp-prev {
-    background: url(/assets/imgs/arrow-right.png);
+    background: url(/assets/imgs/arrow-left.png);
     background-repeat: no-repeat;
-    background-size: cover;
     left: 25px;
-    -ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Safari */
-    transform: rotate(180deg);
 }
 
 .fp-controlArrow.fp-next {
     background: url(/assets/imgs/arrow-right.png);
     background-repeat: no-repeat;
-    background-size: cover;
     right: 25px;
 }
