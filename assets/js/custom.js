@@ -106,4 +106,26 @@ $(document).ready(function(){
         return false;
       });
     });
+
+    $( document ).ready(function() {
+      var hamburger = $('#hamburger-icon');
+      var nav = $('nav');
+      hamburger.click(function() {
+        nav.toggle();
+        hamburger.toggleClass('active');
+        return false;
+      });
+    });
+
+
+    $('#fullpage').fullpage({
+      afterLoad: function(anchorLink, index){
+        var loadedSection = $(this);
+        arrows = loadedSection.find($('div.fp-controlArrow'));
+        next = loadedSection.find($('div.fp-controlArrow.fp-next'));
+        console.log(next);
+        arrows.css('background', 'black');
+        next.css('background', 'black');
+      }
+    });
 });
