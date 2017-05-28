@@ -1,6 +1,6 @@
 ---
 home-image: ./assets/imgs/home_reddots.png
-value: 2
+value: 3
 slides:
   - header-image: ./assets/imgs/home_reddots.png
     background: yellow
