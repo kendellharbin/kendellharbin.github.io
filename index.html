@@ -22,7 +22,7 @@ layout: default
             <a href="/"><img class="image_scaler_section" src={{ slide.header-image }}></a>
             <span class="return {{ slide.icon-color }}">take me back<br>to square one</span>
             <span class="filler"></span>
-            <i class="material-icons {{ slide.icon-color }}">menu</i>
+          <!--   <i class="material-icons {{ slide.icon-color }}">menu</i> -->
         </div>
         <!-- body -->
         <div class="section-body-container">
@@ -33,7 +33,9 @@ layout: default
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
           </div>
+           <div><span class="section-title">{{ section.shout }}</span></div>
         {% else %}
+        <span class="section-title">{{ section.shout }}</span>
           <div class="section-text-container right">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
             <div class="section-body-text">{{  slide.content  }}</div>
@@ -41,7 +43,9 @@ layout: default
           <img class="first-image" src={{ slide.image }}>
         {% endif %}
         </div>
+
   </div>
+
   {% endfor %}
 
 </div>
@@ -52,7 +56,7 @@ layout: default
   <div class="footer">
       <div class="container footer-header">
           <a href="/"><img class="image_scaler_section" src="./assets/imgs/home_risoink.png" alt="footer image"></a>
-          <i class="material-icons red">menu</i>
+         <!--  <i class="material-icons red">menu</i> -->
       </div>
       <div class="footer-body center">
         <p class="red bold">My name is Kendell Harbin.</p>
