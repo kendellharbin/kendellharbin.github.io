@@ -3,7 +3,7 @@ home-image: ./assets/imgs/home_peel.png
 value: 2
 slides:
   - header-image: ./assets/imgs/home_peel.png
-    background: yellow
+    background: yellow-stripe-background
     icon-color: red
     header-color: red
     image-orientation: left
