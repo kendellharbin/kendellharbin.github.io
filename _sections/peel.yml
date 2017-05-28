@@ -12,7 +12,7 @@ slides:
     content: THE ROAMING CENTER FOR MAGNETIC ALTERNATIVES (RCMA) is a lending library of over 500 vhs tapes and video technologies traveling Mid-America to connect with outlying LGBTQIA populations. It is an emergent project exploring the correlation between queer culture, video history, and a medium on the edge of obsolescence. By providing a media center for screenings, dialogues, artist-led videography workshops, and equipment access, the immediate aim is to empower communities who wish to uncover and tell their own stories. Taking a wider view, this project examines the role of archives, sharing economies, and self-made media throughout queer history.
 
   - header-image: ./assets/imgs/home_peel.png
-    background: yellow
+    background: yellow-stripe-background
     icon-color: red
     header-color: red
     image-orientation: left
