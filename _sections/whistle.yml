@@ -1,6 +1,6 @@
 ---
 home-image: ./assets/imgs/home_whistle.png
-value: 2
+value: 6
 slides:
   - header-image: ./assets/imgs/home_whistle.png
     background: yellow
