@@ -7,7 +7,7 @@ layout: default
  <div class="section">
    <span class="home-text dark-blue">everything tells a story</span>
    {% for section in sections %}
-     <a href="#" class="item" data-src={{ section.value }}><img class="image_scaler_home" src={{ section.home-image }} ></a>
+     <a href="#" class="item" data-src={{ section.value }}><img class="" src={{ section.home-image }} ></a>
    {% endfor %}
  </div>
 
@@ -31,7 +31,7 @@ layout: default
 
           <div class="section-text-container left">
             <span class="section-text-header {{ slide.header-color }}">{{ slide.title }}</span>
-            <div class="section-body-text">{{  slide.content  }}</div>
+            <div class="section-body-text">{{ slide.content  }}</div>
           </div>
            <div><span class="section-title">{{ section.shout }}</span></div>
         {% else %}
