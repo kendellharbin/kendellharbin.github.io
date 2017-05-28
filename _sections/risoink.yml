@@ -1,6 +1,6 @@
 ---
 home-image: ./assets/imgs/home_risoink.png
-value: 2
+value: 4
 slides:
   - header-image: ./assets/imgs/home_risoink.png
     background: yellow
